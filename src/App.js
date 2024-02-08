@@ -71,12 +71,18 @@ show=true;
     <form onSubmit={drawT}>
    <div className='half'>
   <p>Total de Jogadores:</p>
-  <input type='number'  value={NPlayers}  onChange={(e)=>setPlayers(e.target.value)}/>
+  <label>
+      <input type='number'  value={NPlayers}  onChange={(e)=>setPlayers(e.target.value)}/>
+  </label>
+
     </div> 
  
    <div className='half'>
       <p> Jogadores por time:</p>
-  <input type='number'  value={PTeam}   onChange={(e)=>setTeam(e.target.value)}/>
+      <label>
+          <input type='number'  value={PTeam}   onChange={(e)=>setTeam(e.target.value)}/>
+      </label>
+
     </div>  
 
 
